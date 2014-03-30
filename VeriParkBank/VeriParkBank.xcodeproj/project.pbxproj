@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1CA4351826415E0024CCB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4341826415E0024CCB9 /* Foundation.framework */; };
+		4C1CA4371826415E0024CCB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4361826415E0024CCB9 /* CoreGraphics.framework */; };
+		4C1CA4391826415E0024CCB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4381826415E0024CCB9 /* UIKit.framework */; };
+		4C1CA43F1826415E0024CCB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CA43D1826415E0024CCB9 /* InfoPlist.strings */; };
+		4C1CA4411826415E0024CCB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA4401826415E0024CCB9 /* main.m */; };
+		4C1CA4451826415E0024CCB9 /* VPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA4441826415E0024CCB9 /* VPAppDelegate.m */; };
+		4C1CA44D1826415E0024CCB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CA44C1826415E0024CCB9 /* Images.xcassets */; };
+		4C1CA4541826415E0024CCB9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4531826415E0024CCB9 /* XCTest.framework */; };
+		4C1CA4551826415E0024CCB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4341826415E0024CCB9 /* Foundation.framework */; };
+		4C1CA4561826415E0024CCB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4381826415E0024CCB9 /* UIKit.framework */; };
+		4C1CA4BE182644DC0024CCB9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CA4BD182644DC0024CCB9 /* CFNetwork.framework */; };
+		4C1CA4DC182647420024CCB9 /* VPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1CA4DA182647420024CCB9 /* VPLoginViewController.m */; };
+		4C1CA4DD182647420024CCB9 /* VPLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1CA4DB182647420024CCB9 /* VPLoginView.xib */; };
+		4CBAD02B1826515800707A62 /* VPSecondLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAD0291826515800707A62 /* VPSecondLoginViewController.m */; };
+		4CBAD02C1826515800707A62 /* VPSecondLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAD02A1826515800707A62 /* VPSecondLoginView.xib */; };
+		4CBAD0301826531B00707A62 /* VPLadingPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAD02E1826531B00707A62 /* VPLadingPageViewController.m */; };
+		4CBAD0311826531B00707A62 /* VPLadingPageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAD02F1826531B00707A62 /* VPLadingPageView.xib */; };
+		4CBAD0351826554B00707A62 /* VPAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAD0341826554B00707A62 /* VPAccount.m */; };
+		4CBAD039182656B600707A62 /* VPAccountDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBAD037182656B600707A62 /* VPAccountDetailsViewController.m */; };
+		4CBAD03A182656B600707A62 /* VPAccountDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAD038182656B600707A62 /* VPAccountDetailsView.xib */; };
+		4CBEA5B318281D2E009999E5 /* VPBankService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5B218281D2E009999E5 /* VPBankService.m */; };
+		4CBEA5B618281E82009999E5 /* VPUserToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5B518281E82009999E5 /* VPUserToken.m */; };
+		4CBEA5BC18282A5D009999E5 /* VPMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5BB18282A5D009999E5 /* VPMutableURLRequest.m */; };
+		4CBEA5BF18282E0A009999E5 /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5BE18282E0A009999E5 /* SMXMLDocument.m */; };
+		4CBEA5C418283EA2009999E5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEA5C318283EA2009999E5 /* logo.png */; };
+		4CBEA5C6182841F5009999E5 /* veribranch.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBEA5C5182841F5009999E5 /* veribranch.png */; };
+		4CBEA5CD182848E1009999E5 /* UIAlertView+VeriPark.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5CC182848E1009999E5 /* UIAlertView+VeriPark.m */; };
+		4CBEA5D0182865B8009999E5 /* VPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5CF182865B8009999E5 /* VPTableViewCell.m */; };
+		4CBEA5D31828758C009999E5 /* VPAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBEA5D21828758C009999E5 /* VPAccountInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C1CA4571826415E0024CCB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1CA4291826415E0024CCB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C1CA4301826415E0024CCB9;
+			remoteInfo = VeriParkBank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C1CA4311826415E0024CCB9 /* VeriParkBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeriParkBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1CA4341826415E0024CCB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C1CA4361826415E0024CCB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C1CA4381826415E0024CCB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C1CA43C1826415E0024CCB9 /* VeriParkBank-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VeriParkBank-Info.plist"; sourceTree = "<group>"; };
+		4C1CA43E1826415E0024CCB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C1CA4401826415E0024CCB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C1CA4421826415E0024CCB9 /* VeriParkBank-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeriParkBank-Prefix.pch"; sourceTree = "<group>"; };
+		4C1CA4431826415E0024CCB9 /* VPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPAppDelegate.h; sourceTree = "<group>"; };
+		4C1CA4441826415E0024CCB9 /* VPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPAppDelegate.m; sourceTree = "<group>"; };
+		4C1CA44C1826415E0024CCB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C1CA4521826415E0024CCB9 /* VeriParkBankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeriParkBankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1CA4531826415E0024CCB9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4C1CA4BD182644DC0024CCB9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4C1CA4D9182647420024CCB9 /* VPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPLoginViewController.h; sourceTree = "<group>"; };
+		4C1CA4DA182647420024CCB9 /* VPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPLoginViewController.m; sourceTree = "<group>"; };
+		4C1CA4DB182647420024CCB9 /* VPLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPLoginView.xib; sourceTree = "<group>"; };
+		4CBAD0281826515800707A62 /* VPSecondLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPSecondLoginViewController.h; sourceTree = "<group>"; };
+		4CBAD0291826515800707A62 /* VPSecondLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPSecondLoginViewController.m; sourceTree = "<group>"; };
+		4CBAD02A1826515800707A62 /* VPSecondLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPSecondLoginView.xib; sourceTree = "<group>"; };
+		4CBAD02D1826531B00707A62 /* VPLadingPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPLadingPageViewController.h; sourceTree = "<group>"; };
+		4CBAD02E1826531B00707A62 /* VPLadingPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPLadingPageViewController.m; sourceTree = "<group>"; };
+		4CBAD02F1826531B00707A62 /* VPLadingPageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPLadingPageView.xib; sourceTree = "<group>"; };
+		4CBAD0331826554B00707A62 /* VPAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPAccount.h; sourceTree = "<group>"; };
+		4CBAD0341826554B00707A62 /* VPAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPAccount.m; sourceTree = "<group>"; };
+		4CBAD036182656B600707A62 /* VPAccountDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPAccountDetailsViewController.h; sourceTree = "<group>"; };
+		4CBAD037182656B600707A62 /* VPAccountDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPAccountDetailsViewController.m; sourceTree = "<group>"; };
+		4CBAD038182656B600707A62 /* VPAccountDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VPAccountDetailsView.xib; sourceTree = "<group>"; };
+		4CBEA5B118281D2E009999E5 /* VPBankService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPBankService.h; sourceTree = "<group>"; };
+		4CBEA5B218281D2E009999E5 /* VPBankService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPBankService.m; sourceTree = "<group>"; };
+		4CBEA5B418281E82009999E5 /* VPUserToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPUserToken.h; sourceTree = "<group>"; };
+		4CBEA5B518281E82009999E5 /* VPUserToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPUserToken.m; sourceTree = "<group>"; };
+		4CBEA5BA18282A5D009999E5 /* VPMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPMutableURLRequest.h; sourceTree = "<group>"; };
+		4CBEA5BB18282A5D009999E5 /* VPMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPMutableURLRequest.m; sourceTree = "<group>"; };
+		4CBEA5BD18282E0A009999E5 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		4CBEA5BE18282E0A009999E5 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		4CBEA5C318283EA2009999E5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		4CBEA5C5182841F5009999E5 /* veribranch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = veribranch.png; sourceTree = "<group>"; };
+		4CBEA5CB182848E1009999E5 /* UIAlertView+VeriPark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+VeriPark.h"; sourceTree = "<group>"; };
+		4CBEA5CC182848E1009999E5 /* UIAlertView+VeriPark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+VeriPark.m"; sourceTree = "<group>"; };
+		4CBEA5CE182865B8009999E5 /* VPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPTableViewCell.h; sourceTree = "<group>"; };
+		4CBEA5CF182865B8009999E5 /* VPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPTableViewCell.m; sourceTree = "<group>"; };
+		4CBEA5D11828758C009999E5 /* VPAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPAccountInfo.h; sourceTree = "<group>"; };
+		4CBEA5D21828758C009999E5 /* VPAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPAccountInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C1CA42E1826415E0024CCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA4BE182644DC0024CCB9 /* CFNetwork.framework in Frameworks */,
+				4C1CA4371826415E0024CCB9 /* CoreGraphics.framework in Frameworks */,
+				4C1CA4391826415E0024CCB9 /* UIKit.framework in Frameworks */,
+				4C1CA4351826415E0024CCB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA44F1826415E0024CCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA4541826415E0024CCB9 /* XCTest.framework in Frameworks */,
+				4C1CA4561826415E0024CCB9 /* UIKit.framework in Frameworks */,
+				4C1CA4551826415E0024CCB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C1CA4281826415E0024CCB9 = {
+			isa = PBXGroup;
+			children = (
+				4C1CA43A1826415E0024CCB9 /* VeriParkBank */,
+				4C1CA4331826415E0024CCB9 /* Frameworks */,
+				4C1CA4321826415E0024CCB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C1CA4321826415E0024CCB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA4311826415E0024CCB9 /* VeriParkBank.app */,
+				4C1CA4521826415E0024CCB9 /* VeriParkBankTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1CA4331826415E0024CCB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEA5C018282E0D009999E5 /* SMXL */,
+				4C1CA4BD182644DC0024CCB9 /* CFNetwork.framework */,
+				4C1CA4341826415E0024CCB9 /* Foundation.framework */,
+				4C1CA4361826415E0024CCB9 /* CoreGraphics.framework */,
+				4C1CA4381826415E0024CCB9 /* UIKit.framework */,
+				4C1CA4531826415E0024CCB9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C1CA43A1826415E0024CCB9 /* VeriParkBank */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEA5C218283E95009999E5 /* Resources */,
+				4CBEA5C118283517009999E5 /* Extensions */,
+				4CBEA5B018281D00009999E5 /* Services */,
+				4CBAD0321826553500707A62 /* Models */,
+				4C1CA4D31826455B0024CCB9 /* Controllers */,
+				4C1CA4D2182645540024CCB9 /* Views */,
+				4C1CA4431826415E0024CCB9 /* VPAppDelegate.h */,
+				4C1CA4441826415E0024CCB9 /* VPAppDelegate.m */,
+				4C1CA44C1826415E0024CCB9 /* Images.xcassets */,
+				4C1CA43B1826415E0024CCB9 /* Supporting Files */,
+			);
+			path = VeriParkBank;
+			sourceTree = "<group>";
+		};
+		4C1CA43B1826415E0024CCB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA43C1826415E0024CCB9 /* VeriParkBank-Info.plist */,
+				4C1CA43D1826415E0024CCB9 /* InfoPlist.strings */,
+				4C1CA4401826415E0024CCB9 /* main.m */,
+				4C1CA4421826415E0024CCB9 /* VeriParkBank-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C1CA4D2182645540024CCB9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CBAD02F1826531B00707A62 /* VPLadingPageView.xib */,
+				4CBAD02A1826515800707A62 /* VPSecondLoginView.xib */,
+				4C1CA4DB182647420024CCB9 /* VPLoginView.xib */,
+				4CBAD038182656B600707A62 /* VPAccountDetailsView.xib */,
+				4CBEA5CE182865B8009999E5 /* VPTableViewCell.h */,
+				4CBEA5CF182865B8009999E5 /* VPTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4C1CA4D31826455B0024CCB9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C1CA4D9182647420024CCB9 /* VPLoginViewController.h */,
+				4C1CA4DA182647420024CCB9 /* VPLoginViewController.m */,
+				4CBAD0281826515800707A62 /* VPSecondLoginViewController.h */,
+				4CBAD0291826515800707A62 /* VPSecondLoginViewController.m */,
+				4CBAD02D1826531B00707A62 /* VPLadingPageViewController.h */,
+				4CBAD02E1826531B00707A62 /* VPLadingPageViewController.m */,
+				4CBAD036182656B600707A62 /* VPAccountDetailsViewController.h */,
+				4CBAD037182656B600707A62 /* VPAccountDetailsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4CBAD0321826553500707A62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CBAD0331826554B00707A62 /* VPAccount.h */,
+				4CBAD0341826554B00707A62 /* VPAccount.m */,
+				4CBEA5B418281E82009999E5 /* VPUserToken.h */,
+				4CBEA5B518281E82009999E5 /* VPUserToken.m */,
+				4CBEA5D11828758C009999E5 /* VPAccountInfo.h */,
+				4CBEA5D21828758C009999E5 /* VPAccountInfo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4CBEA5B018281D00009999E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEA5B118281D2E009999E5 /* VPBankService.h */,
+				4CBEA5B218281D2E009999E5 /* VPBankService.m */,
+				4CBEA5BA18282A5D009999E5 /* VPMutableURLRequest.h */,
+				4CBEA5BB18282A5D009999E5 /* VPMutableURLRequest.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		4CBEA5C018282E0D009999E5 /* SMXL */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEA5BD18282E0A009999E5 /* SMXMLDocument.h */,
+				4CBEA5BE18282E0A009999E5 /* SMXMLDocument.m */,
+			);
+			name = SMXL;
+			sourceTree = "<group>";
+		};
+		4CBEA5C118283517009999E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEA5CB182848E1009999E5 /* UIAlertView+VeriPark.h */,
+				4CBEA5CC182848E1009999E5 /* UIAlertView+VeriPark.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4CBEA5C218283E95009999E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4CBEA5C5182841F5009999E5 /* veribranch.png */,
+				4CBEA5C318283EA2009999E5 /* logo.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C1CA4301826415E0024CCB9 /* VeriParkBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1CA4631826415E0024CCB9 /* Build configuration list for PBXNativeTarget "VeriParkBank" */;
+			buildPhases = (
+				4C1CA42D1826415E0024CCB9 /* Sources */,
+				4C1CA42E1826415E0024CCB9 /* Frameworks */,
+				4C1CA42F1826415E0024CCB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeriParkBank;
+			productName = VeriParkBank;
+			productReference = 4C1CA4311826415E0024CCB9 /* VeriParkBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C1CA4511826415E0024CCB9 /* VeriParkBankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1CA4661826415E0024CCB9 /* Build configuration list for PBXNativeTarget "VeriParkBankTests" */;
+			buildPhases = (
+				4C1CA44E1826415E0024CCB9 /* Sources */,
+				4C1CA44F1826415E0024CCB9 /* Frameworks */,
+				4C1CA4501826415E0024CCB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C1CA4581826415E0024CCB9 /* PBXTargetDependency */,
+			);
+			name = VeriParkBankTests;
+			productName = VeriParkBankTests;
+			productReference = 4C1CA4521826415E0024CCB9 /* VeriParkBankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C1CA4291826415E0024CCB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Svett Ralchev";
+				TargetAttributes = {
+					4C1CA4511826415E0024CCB9 = {
+						TestTargetID = 4C1CA4301826415E0024CCB9;
+					};
+				};
+			};
+			buildConfigurationList = 4C1CA42C1826415E0024CCB9 /* Build configuration list for PBXProject "VeriParkBank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C1CA4281826415E0024CCB9;
+			productRefGroup = 4C1CA4321826415E0024CCB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C1CA4301826415E0024CCB9 /* VeriParkBank */,
+				4C1CA4511826415E0024CCB9 /* VeriParkBankTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C1CA42F1826415E0024CCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1CA44D1826415E0024CCB9 /* Images.xcassets in Resources */,
+				4C1CA4DD182647420024CCB9 /* VPLoginView.xib in Resources */,
+				4CBAD02C1826515800707A62 /* VPSecondLoginView.xib in Resources */,
+				4C1CA43F1826415E0024CCB9 /* InfoPlist.strings in Resources */,
+				4CBEA5C418283EA2009999E5 /* logo.png in Resources */,
+				4CBEA5C6182841F5009999E5 /* veribranch.png in Resources */,
+				4CBAD0311826531B00707A62 /* VPLadingPageView.xib in Resources */,
+				4CBAD03A182656B600707A62 /* VPAccountDetailsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA4501826415E0024CCB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C1CA42D1826415E0024CCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBEA5B618281E82009999E5 /* VPUserToken.m in Sources */,
+				4CBAD02B1826515800707A62 /* VPSecondLoginViewController.m in Sources */,
+				4CBEA5BC18282A5D009999E5 /* VPMutableURLRequest.m in Sources */,
+				4CBEA5D31828758C009999E5 /* VPAccountInfo.m in Sources */,
+				4CBEA5D0182865B8009999E5 /* VPTableViewCell.m in Sources */,
+				4C1CA4451826415E0024CCB9 /* VPAppDelegate.m in Sources */,
+				4CBAD0351826554B00707A62 /* VPAccount.m in Sources */,
+				4C1CA4411826415E0024CCB9 /* main.m in Sources */,
+				4CBEA5BF18282E0A009999E5 /* SMXMLDocument.m in Sources */,
+				4CBAD039182656B600707A62 /* VPAccountDetailsViewController.m in Sources */,
+				4CBEA5B318281D2E009999E5 /* VPBankService.m in Sources */,
+				4CBEA5CD182848E1009999E5 /* UIAlertView+VeriPark.m in Sources */,
+				4C1CA4DC182647420024CCB9 /* VPLoginViewController.m in Sources */,
+				4CBAD0301826531B00707A62 /* VPLadingPageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1CA44E1826415E0024CCB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C1CA4581826415E0024CCB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C1CA4301826415E0024CCB9 /* VeriParkBank */;
+			targetProxy = 4C1CA4571826415E0024CCB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C1CA43D1826415E0024CCB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1CA43E1826415E0024CCB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C1CA4611826415E0024CCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C1CA4621826415E0024CCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C1CA4641826415E0024CCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeriParkBank/VeriParkBank-Prefix.pch";
+				INFOPLIST_FILE = "VeriParkBank/VeriParkBank-Info.plist";
+				OTHER_CFLAGS = "-I/usr/include/libxml2";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C1CA4651826415E0024CCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeriParkBank/VeriParkBank-Prefix.pch";
+				INFOPLIST_FILE = "VeriParkBank/VeriParkBank-Info.plist";
+				OTHER_CFLAGS = "-I/usr/include/libxml2";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C1CA4671826415E0024CCB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VeriParkBank.app/VeriParkBank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeriParkBank/VeriParkBank-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VeriParkBankTests/VeriParkBankTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4C1CA4681826415E0024CCB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VeriParkBank.app/VeriParkBank";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeriParkBank/VeriParkBank-Prefix.pch";
+				INFOPLIST_FILE = "VeriParkBankTests/VeriParkBankTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C1CA42C1826415E0024CCB9 /* Build configuration list for PBXProject "VeriParkBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA4611826415E0024CCB9 /* Debug */,
+				4C1CA4621826415E0024CCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1CA4631826415E0024CCB9 /* Build configuration list for PBXNativeTarget "VeriParkBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA4641826415E0024CCB9 /* Debug */,
+				4C1CA4651826415E0024CCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1CA4661826415E0024CCB9 /* Build configuration list for PBXNativeTarget "VeriParkBankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1CA4671826415E0024CCB9 /* Debug */,
+				4C1CA4681826415E0024CCB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C1CA4291826415E0024CCB9 /* Project object */;
+}

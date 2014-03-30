@@ -1,0 +1,31 @@
+<?xml version="1.0" ?> 
+<project name="api" default="war">
+	<property name="project" location="./BookshelfAPI" />
+	<property name="webcontent" location="${project}/WebContent" />
+	<property name="webcontent.inf" location="${webcontent}/WEB-INF" />
+	<property name="distination.file" location="api.war" />
+	<path id="compile.classpath">
+		<fileset dir="${webcontent.inf}/lib">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<target name="init">
+		<mkdir dir="build/classes"/>
+	</target>
+	<target name="compile" depends="init" >
+		<javac destdir="build/classes" debug="true" srcdir="${project}/src">
+			<classpath refid="compile.classpath"/>
+		</javac>
+	</target>
+	<target name="war" depends="compile">
+		<war destfile="${distination.file}" webxml="${webcontent.inf}/web.xml">
+			<fileset dir="${webcontent}"/>
+			<lib dir="${webcontent.inf}/lib"/>
+			<classes dir="build/classes"/>
+		</war>
+	</target>
+	<target name="clean">
+		<delete dir="${distination.file}" />
+		<delete dir="build" />
+	</target>
+</project>

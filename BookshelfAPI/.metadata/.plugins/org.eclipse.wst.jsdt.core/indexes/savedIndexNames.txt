@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+/Users/ralch/Projects/work-projects/Assignments/BookshelfAPI/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1040689227.index
+3348436485.index
+3609831627.index
+3208481874.index
+675708025.index
