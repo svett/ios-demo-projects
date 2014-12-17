@@ -56,7 +56,7 @@ static NSString *sBooksURL = @"http://assignment.golgek.mobi/api/v10/items";
     _allBooks = nil;
     _bookDetails = nil;
     _webClient = nil;
-    [[NSNotificationCenter defaultCenter] removeObject:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - Methods
@@ -68,8 +68,15 @@ static NSString *sBooksURL = @"http://assignment.golgek.mobi/api/v10/items";
 - (NSArray*)getAllBooks {
     if(!_allBooks) {
         NSURL *url = [NSURL URLWithString:sBooksURL];
-        _allBooks = [_webClient fetchAllObjects:url ofType:[GGBook class]];
+        
+        @try {
+            _allBooks = [_webClient fetchAllObjects:url ofType:[GGBook class]];
+        }
+        @catch(NSException *exception) {
+            _allBooks = [[NSArray alloc] init];
+        }
     }
+    
     return _allBooks;
 }
 

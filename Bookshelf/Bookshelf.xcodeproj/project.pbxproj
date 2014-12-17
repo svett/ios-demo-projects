@@ -25,11 +25,8 @@
 		4CA4FD9F179DB78A00D99303 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4FD9E179DB78A00D99303 /* Default.png */; };
 		4CA4FDA1179DB78A00D99303 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4FDA0179DB78A00D99303 /* Default@2x.png */; };
 		4CA4FDA3179DB78A00D99303 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4FDA2179DB78A00D99303 /* Default-568h@2x.png */; };
-		4CA4FDB1179DB78A00D99303 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA4FDB0179DB78A00D99303 /* SenTestingKit.framework */; };
 		4CA4FDB2179DB78A00D99303 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA4FD8C179DB78900D99303 /* UIKit.framework */; };
 		4CA4FDB3179DB78A00D99303 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA4FD8E179DB78A00D99303 /* Foundation.framework */; };
-		4CA4FDBB179DB78A00D99303 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4FDB9179DB78A00D99303 /* InfoPlist.strings */; };
-		4CA4FDBE179DB78A00D99303 /* BookshelfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4FDBD179DB78A00D99303 /* BookshelfTests.m */; };
 		4CA4FDCA179DB7AB00D99303 /* GGBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4FDC8179DB7AB00D99303 /* GGBooksViewController.m */; };
 		4CA4FDCB179DB7AB00D99303 /* GGBooksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4FDC9179DB7AB00D99303 /* GGBooksView.xib */; };
 		4CA883F217A062610033A6F9 /* GGBookDetailsViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA883F017A062610033A6F9 /* GGBookDetailsViewContoller.m */; };
@@ -75,11 +72,6 @@
 		4CA4FDA0179DB78A00D99303 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4CA4FDA2179DB78A00D99303 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4CA4FDAF179DB78A00D99303 /* BookshelfTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CA4FDB0179DB78A00D99303 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		4CA4FDB8179DB78A00D99303 /* BookshelfTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BookshelfTests-Info.plist"; sourceTree = "<group>"; };
-		4CA4FDBA179DB78A00D99303 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4CA4FDBC179DB78A00D99303 /* BookshelfTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookshelfTests.h; sourceTree = "<group>"; };
-		4CA4FDBD179DB78A00D99303 /* BookshelfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookshelfTests.m; sourceTree = "<group>"; };
 		4CA4FDC7179DB7AB00D99303 /* GGBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBooksViewController.h; sourceTree = "<group>"; };
 		4CA4FDC8179DB7AB00D99303 /* GGBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBooksViewController.m; sourceTree = "<group>"; };
 		4CA4FDC9179DB7AB00D99303 /* GGBooksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGBooksView.xib; sourceTree = "<group>"; };
@@ -102,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA4FDB1179DB78A00D99303 /* SenTestingKit.framework in Frameworks */,
 				4CA4FDB2179DB78A00D99303 /* UIKit.framework in Frameworks */,
 				4CA4FDB3179DB78A00D99303 /* Foundation.framework in Frameworks */,
 			);
@@ -134,7 +125,6 @@
 			children = (
 				4C96D8AD179F32B900BD286D /* Resources */,
 				4CA4FD92179DB78A00D99303 /* Bookshelf */,
-				4CA4FDB6179DB78A00D99303 /* BookshelfTests */,
 				4CA4FD8B179DB78900D99303 /* Frameworks */,
 				4CA4FD8A179DB78900D99303 /* Products */,
 			);
@@ -155,7 +145,6 @@
 				4CA4FD8C179DB78900D99303 /* UIKit.framework */,
 				4CA4FD8E179DB78A00D99303 /* Foundation.framework */,
 				4CA4FD90179DB78A00D99303 /* CoreGraphics.framework */,
-				4CA4FDB0179DB78A00D99303 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,25 +173,6 @@
 				4CA4FD9E179DB78A00D99303 /* Default.png */,
 				4CA4FDA0179DB78A00D99303 /* Default@2x.png */,
 				4CA4FDA2179DB78A00D99303 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4CA4FDB6179DB78A00D99303 /* BookshelfTests */ = {
-			isa = PBXGroup;
-			children = (
-				4CA4FDBC179DB78A00D99303 /* BookshelfTests.h */,
-				4CA4FDBD179DB78A00D99303 /* BookshelfTests.m */,
-				4CA4FDB7179DB78A00D99303 /* Supporting Files */,
-			);
-			path = BookshelfTests;
-			sourceTree = "<group>";
-		};
-		4CA4FDB7179DB78A00D99303 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4CA4FDB8179DB78A00D99303 /* BookshelfTests-Info.plist */,
-				4CA4FDB9179DB78A00D99303 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,7 +251,7 @@
 			name = BookshelfTests;
 			productName = BookshelfTests;
 			productReference = 4CA4FDAF179DB78A00D99303 /* BookshelfTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -290,6 +260,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GG;
+				LastTestingUpgradeCheck = 0610;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Svetlin Ralchev";
 			};
@@ -331,7 +302,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA4FDBB179DB78A00D99303 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA4FDBE179DB78A00D99303 /* BookshelfTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,14 +363,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CA4FD96179DB78A00D99303 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4CA4FDB9179DB78A00D99303 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CA4FDBA179DB78A00D99303 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -494,13 +455,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bookshelf/Bookshelf-Prefix.pch";
 				INFOPLIST_FILE = "BookshelfTests/BookshelfTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -511,13 +472,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bookshelf/Bookshelf-Prefix.pch";
 				INFOPLIST_FILE = "BookshelfTests/BookshelfTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
