@@ -30,6 +30,7 @@
 		4CA4FDCA179DB7AB00D99303 /* GGBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4FDC8179DB7AB00D99303 /* GGBooksViewController.m */; };
 		4CA4FDCB179DB7AB00D99303 /* GGBooksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4FDC9179DB7AB00D99303 /* GGBooksView.xib */; };
 		4CA883F217A062610033A6F9 /* GGBookDetailsViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA883F017A062610033A6F9 /* GGBookDetailsViewContoller.m */; };
+		4CE22A3B1A42DF530011C7AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CE22A3D1A42DF530011C7AF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,12 +72,15 @@
 		4CA4FD9E179DB78A00D99303 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4CA4FDA0179DB78A00D99303 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4CA4FDA2179DB78A00D99303 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4CA4FDAF179DB78A00D99303 /* BookshelfTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookshelfTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA4FDAF179DB78A00D99303 /* BookshelfTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = BookshelfTests.octest; path = BookshelfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA4FDC7179DB7AB00D99303 /* GGBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBooksViewController.h; sourceTree = "<group>"; };
 		4CA4FDC8179DB7AB00D99303 /* GGBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBooksViewController.m; sourceTree = "<group>"; };
 		4CA4FDC9179DB7AB00D99303 /* GGBooksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GGBooksView.xib; sourceTree = "<group>"; };
 		4CA883EF17A062610033A6F9 /* GGBookDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGBookDetailsViewController.h; sourceTree = "<group>"; };
 		4CA883F017A062610033A6F9 /* GGBookDetailsViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGBookDetailsViewContoller.m; sourceTree = "<group>"; };
+		4CE22A3C1A42DF530011C7AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CE22A3E1A42E1230011C7AF /* bg-BG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "bg-BG"; path = "bg-BG.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4CE22A3F1A42E1230011C7AF /* bg-BG */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "bg-BG"; path = "bg-BG.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			children = (
 				4C96D8AD179F32B900BD286D /* Resources */,
 				4CA4FD92179DB78A00D99303 /* Bookshelf */,
+				4CE22A3D1A42DF530011C7AF /* Localizable.strings */,
 				4CA4FD8B179DB78900D99303 /* Frameworks */,
 				4CA4FD8A179DB78900D99303 /* Products */,
 			);
@@ -270,6 +275,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"bg-BG",
 			);
 			mainGroup = 4CA4FD80179DB78900D99303;
 			productRefGroup = 4CA4FD8A179DB78900D99303 /* Products */;
@@ -291,6 +297,7 @@
 				4CA4FD9F179DB78A00D99303 /* Default.png in Resources */,
 				4CA4FDA1179DB78A00D99303 /* Default@2x.png in Resources */,
 				4CA4FDA3179DB78A00D99303 /* Default-568h@2x.png in Resources */,
+				4CE22A3B1A42DF530011C7AF /* Localizable.strings in Resources */,
 				4CA4FDCB179DB7AB00D99303 /* GGBooksView.xib in Resources */,
 				4C96D8AA179F32A300BD286D /* bump_ios_57x57.png in Resources */,
 				4C96D8AC179F32A600BD286D /* bump_ios_114x114.png in Resources */,
@@ -363,8 +370,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				4CA4FD96179DB78A00D99303 /* en */,
+				4CE22A3E1A42E1230011C7AF /* bg-BG */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CE22A3D1A42DF530011C7AF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CE22A3C1A42DF530011C7AF /* en */,
+				4CE22A3F1A42E1230011C7AF /* bg-BG */,
+			);
+			name = Localizable.strings;
+			path = Bookshelf;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

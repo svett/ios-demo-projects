@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Bookshelf
+
+  Created by Svetlin Ralchev on 12/18/14.
+  Copyright (c) 2014 Svetlin Ralchev. All rights reserved.
+*/
+
+"Book details" = "Детайли на книга";
+"Price" = "Цена";
+"by" = "от";
+"Loading..." = "Зареждане...";
+"Search book" = "Търси книга";
+"Books" = "Книги";
+"Last updated on" = "Последно обновявано на";
